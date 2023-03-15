@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="content">
+            <div class="head">
+                <h2>LOGIN HERE</h2>
+                <P>Fill the below form correctly</P>
+            </div>
+            <div class="main">
+                <form action="/action_page.php" onsubmit="myFunction()">
+                    <input type="text" name="username" placeholder="Username" required>
+                    <br>
+                    <br>
+                    <input type="email" name="email" placeholder="E-mail" required>
+                    <br>
+                    <br>
+                    <input type="tel" name="phone no." placeholder="Phone No." required>
+                    <br>
+                    <label for="gender">Gender:</label>
+                <label for="male">Male</label>
+                <input type="radio" name="Gender" id="male" value="male" required> 
+
+                <label for="female">Female</label>
+                <input type="radio" name="Gender" id="female" value="female" required>
+                <br>
+                <br>
+                    <input type="passwword" name="passwword" placeholder="Password" required>
+                    <br>
+                    <button type="submit" id="btn">LOGIN</button>
+
+                    <footer><p>Forgot Password?</p></footer>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            alert("Successfully Submitted!")
+        }
+    </script>
+</body>
+</html>
